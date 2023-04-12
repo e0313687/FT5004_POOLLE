@@ -1,0 +1,53 @@
+body {
+    background-color: #000000; /* 设置页面背景色为黑色 */
+    font-family: Arial, sans-serif; /* 设置字体为 Arial 或 sans-serif */
+    color: #FFFFFF; /* 设置字体颜色为白色 */
+  }
+  
+  .login-container {
+    background-color: #222222; /* 设置登陆框的背景色为深灰色 */
+    padding: 20px; /* 设置登陆框内边距 */
+    border-radius: 10px; /* 设置登陆框圆角 */
+    width: 400px; /* 设置登陆框宽度 */
+    margin: auto; /* 居中显示 */
+  }
+  
+  h1 {
+    text-align: center; /* 设置标题居中 */
+    font-size: 36px; /* 设置字体大小 */
+    margin-bottom: 20px; /* 设置标题与表单之间的距离 */
+  }
+  
+  form {
+    display: flex; /* 设置表单元素为 flex 布局 */
+    flex-direction: column; /* 设置表单元素垂直排列 */
+  }
+  
+  label {
+    font-size: 18px; /* 设置表单标签字体大小 */
+  }
+  
+  input[type="text"], input[type="password"] {
+    background-color: #444444; /* 设置文本框的背景色 */
+    border: none; /* 去掉文本框边框 */
+    border-radius: 5px; /* 设置文本框圆角 */
+    padding: 10px; /* 设置文本框内边距 */
+    color: #FFFFFF; /* 设置文本框字体颜色 */
+    margin-bottom: 10px; /* 设置文本框与下一个元素之间的距离 */
+  }
+  
+  button {
+    background-color: #4dd0e1; /* 设置按钮背景色为天蓝色 */
+    border: none; /* 去掉按钮边框 */
+    border-radius: 5px; /* 设置按钮圆角 */
+    padding: 10px; /* 设置按钮内边距 */
+    color: #FFFFFF; /* 设置按钮字体颜色 */
+    font-size: 18px; /* 设置按钮字体大小 */
+    cursor: pointer; /* 设置按钮鼠标指针为手型 */
+    transition: background-color 0.3s; /* 设置背景色变化动画效果 */
+  }
+  
+  button:hover {
+    background-color: #FF8C00; /* 设置鼠标
+  
+  
