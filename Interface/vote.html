@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction Gamble - Voting Page</title>
+    <style>
+      body {
+        background-color: #222;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 0;
+      }
+      .outcome {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .outcome__title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .outcome__description {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .outcome__image {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+      .bet-form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      .bet-form__field {
+        margin-bottom: 10px;
+      }
+      .bet-form__label {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .bet-form__input {
+        background-color: #444;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px;
+      }
+      .bet-form__submit {
+        background-color: #4dd0e1;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        transition: background-color 0.2s;
+      }
+      .bet-form__submit:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>United States Presidential election, 2020</h1>
+      <div class="outcome">
+        <div class="outcome__item">
+          <div class="outcome__title">Biden</div>
+          <img class="outcome__image" src="Biden.png" alt="Outcome 1 Image">
+          <div class="outcome__description">Joseph Robinette Biden Jr.</div>
+        </div>
+        <div class="outcome__item">
+          <div class="outcome__title">Trump</div>
+          <img class="outcome__image" src="Trump.png" alt="Outcome 2 Image">
+          <div class="outcome__description">Donald John Trump.</div>
+        </div>
+      </div>
+      <form class="bet-form" action="#" method="post">
+        <div class="bet-form__field">
+          <label class="bet-form__label" for="outcome">Choose your outcome:</label>
+          <select class="bet-form__input" name="outcome" id="outcome">
+            <option value="outcome1">Biden</option>
+            <option value="outcome2">Trump</option>
+          </select>
+        </div>
+        <div class="bet-form__field">
+          <label class="bet-form__label" for="amount">Enter your bet amount:</label>
+          <input class="bet-form__input" type="number" name="amount" id="amount" min="1" step="1" required>
+        </div>
+        <button class="bet-form__submit" type="submit">Place Bet</button>
+
