@@ -3,6 +3,7 @@ const truffleAssert = require('truffle-assertions');
 var assert = require('assert');
 
 var User = artifacts.require("../contracts/User.sol");
+var AdminUser = artifacts.require("../contracts/AdminUser.sol");
 var Event = artifacts.require("../contracts/Event.sol");
 
 contract('Event', function(accounts) {
